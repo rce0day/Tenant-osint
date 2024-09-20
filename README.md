@@ -40,6 +40,13 @@ Output data can be utilized to create a realistic phishing page using official b
 
 more!
 
+
+Output:
+
+The found data will be saved to a json file containing the domain in the filename, it will also be printed to cmd. The script supports cli arguments, example: "py main.py --domain github.com"
+
+
+
 Comments:
 
 
