@@ -74,7 +74,7 @@ def main_func(orgname):
     if response_data:
         fed_url = federation_redirect_url(response_data)
         branding_data = get_branding(response_data)
-        if fed_url and not branding_data:
+        if not fed_url and not branding_data:
             assumption = "Brand does not use Microsoft and never has."
         elif not fed_url and branding_data:
             assumption = "Brand uses Microsoft with no federation redirects."
